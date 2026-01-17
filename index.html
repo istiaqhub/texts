@@ -7,94 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="page">
-    <p>1.16.24 06:57 AM</p>
-    <blockquote>
-      this next song abt my sleep schedule lol
-    </blockquote>
-    <p>1.13.24 06:51 AM</p>
-    <blockquote>
-      things r starting to connect
-    </blockquote>
-    <p>1.8.24 11:26 PM</p>
-    <blockquote>
-      tiktok wouldnt let me post got me little sad n shi whateva :(
-    </blockquote>
-    <p>1.1.24 05:28 PM</p>
-    <blockquote>
-      taking this shit more seriously
-    </blockquote>
-    <p>12.13.23 09:17 PM</p>
-    <blockquote>
-      waiting for my voice to start feeling better its been a little off recently cuz of the cold i think
-    </blockquote>
-    <p>12.11.23 08:45 PM</p>
-    <blockquote>
-      im about to have alot more freetime this cool
-    </blockquote>
-    <p>12.08.23 02:41 PM</p>
-    <blockquote>
-      i feel rejuvenated again :D
-    </blockquote>
-    <p>12.07.23 08:57 PM</p>
-    <blockquote>
-      but im going to be better there is nothing else i want to do
-    </blockquote>
-    <p>12.07.23 08:55 PM</p>
-    <blockquote>
-      i wish i was naturally gifted at singing or music theory, it feels like everything i want to put out from my brain goes through a shit filter. i just want to make what i want to hear
-    </blockquote>
-    <p>12.07.23 08:54 PM</p>
-    <blockquote>
-      i hit a stag in my progress. usually i'd give it all up and restart all of this months/years from now but i now am forcing myself to keep it at. i'll take a break for now but the day after i am getting myself back on it.
-    </blockquote>
-    <p>12.07.23 02:27 PM</p>
-    <blockquote>
-      there's nothing else i want to do but work on my projects
-    </blockquote>
-    <p>12.06.23 03:40 PM</p>
-    <blockquote>
-      im gonna work on my 3d modelling too i havent tried blender yet ima try it
-    </blockquote>
-    <p>12.06.23 03:35 PM</p>
-    <blockquote>
-      altho i dont want to be talking into the void through next year lol i would want harbor some kind of niche community by the end of 2024
-    </blockquote>
-    <p>12.06.23 03:32 PM</p>
-    <blockquote>
-      even tho i need to be a big thing its nice to be talking into the void
-    </blockquote>
-    <p>12.06.23 02:08 PM</p>
-    <blockquote>
-      lyrics are something alot harder than i thought ngl lol, thats something i need to get better at ASAP
-    </blockquote>
-    <p>12.06.23 02:05 PM</p>
-    <blockquote>
-      i still need to work on my pitch and breathing, idk if i'll ever have timbre down but i'll prob find a way around it
-    </blockquote>
-    <p>12.06.23 02:03 PM</p>
-    <blockquote>
-      i think im getting better at using my voice now, i've only been using it for one song rn tho i think i'll have it down by 5 or 6 songs
-    </blockquote>
-    <p>12.05.23 10:35 PM</p>
-    <blockquote>
-      screaming is funny xDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
-    </blockquote>
-    <p>11.30.23 08:32 PM</p>
-    <blockquote>
-      ever since i took the dive into making music i started listening to it differently, everything sounds like a possibility
-    </blockquote>
-    <p>11.30.23 08:00 PM</p>
-    <blockquote>
-      i think i know what genre and style i want to gear towards for the time being, it took a lot of listening but i think i'll be able to make some cool stuff now
-    </blockquote>
-    <p>11.28.23 10:09 AM</p>
-    <blockquote>
-      this website is now publicly available, i hope those who find it have a nice time reading through my ramblings from time to time
-    </blockquote>
-    <p>11.27.23 04:21 AM</p>
-    <blockquote>
-      this is a good place to store what i need to say
-    </blockquote>
-  </div>
+
+<div class="login-container">
+  <input type="email" id="emailInput" placeholder="Email" />
+  <input type="password" id="passwordInput" placeholder="Password" />
+  <button id="loginBtn">Unlock</button>
+  <p id="loginError" style="color:red;"></p>
+</div>
+
+<form id="postForm" style="display:none;">
+  <textarea id="postInput" placeholder="Post" required></textarea>
+  <button type="submit">Post</button>
+</form>
+<div id="posts"></div>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="script.js"></script>
 </body>
