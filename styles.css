@@ -12,21 +12,25 @@ a {
 body {
   background-color: black;
 }
-button {
-  background: none;
-  border: none;
-  font-size: 1em;
-  font-weight: bold;
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+#postForm textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+}
+
+#postForm button {
+  margin-top: 6px;
+  padding: 8px 16px;
+}
+
+#posts div {
   color: white;
-  font-family: "Times New Roman", Times, serif;
-}
-
-button:hover span {
-  display: none
-}
-
-button:hover:before {
-  background: white;
-  color: black;
-  content: "media"
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
 }
